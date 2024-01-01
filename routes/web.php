@@ -34,4 +34,6 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/', [VueController::class, 'redirectToFolder']);
+Route::get('/', function () {
+    return view('welcome');
+});
